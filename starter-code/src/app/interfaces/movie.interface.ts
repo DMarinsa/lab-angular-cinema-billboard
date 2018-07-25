@@ -7,6 +7,4 @@ export interface movie {
   year: Number;
   director: String;
   actors: Array<String>;
-  hours: Array<String>;
-  room: Number;
 }

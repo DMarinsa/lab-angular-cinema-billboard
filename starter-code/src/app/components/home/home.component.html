@@ -1,3 +1,9 @@
-<p>
-  home works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="movieCard" *ngFor="let movie of movies">
+      <h2>Room {{movie.id}}</h2>
+      <img src="{{movie.poster}}" alt="">
+      <a [routerLink]="['/movies', movie.id]">{{movie.title}}</a>
+    </div>
+  </div>
+</div>

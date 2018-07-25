@@ -1,11 +1,14 @@
 import { Injectable } from '@angular/core';
 import { movie } from '../interfaces/movie.interface';
+import { movieList } from 'sample-movies';
 
 @Injectable()
 export class MovieService {
-  movies: Array<movie>;
+  movies: Array<movie> = [];
   
-  constructor() { }
+  constructor() {
+    this.movies = movieList
+  }
 
   getMovies() {
     return this.movies;
